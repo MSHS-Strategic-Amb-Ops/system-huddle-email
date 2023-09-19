@@ -36,7 +36,7 @@ compose_email(header = sinai_logo,
   #   filename = paste0("Oncology Arrived Data ", month_year, ".zip")
   # ) %>%
   smtp_send(
-    from = "soyoun.kweon@mssm.edu",
+    from = c("Kweon, So Youn", "soyoun.kweon@mssm.edu"),
     to = send_list,
     cc = cc_list,
     credentials = creds_file(file = email_credential_location),
