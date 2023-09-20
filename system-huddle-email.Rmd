@@ -39,7 +39,7 @@ sinai_logo <- add_image(file = "www/Mount_Sinai_Logo_H.png",
                         width = 300)
 
 # Generate the footer text
-footer_text <- glue("System Huddle Report for the Week of {sending_date}.")
+footer_text <- glue("System Huddle Report for the Week of {sending_date}.\n This is auto-generated email.")
 
 
 
