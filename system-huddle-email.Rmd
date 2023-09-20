@@ -9,6 +9,7 @@ library(blastula)
 library(rmarkdown)
 library(here)
 library(glue)
+library(lubridate)
 ```
 
 
@@ -27,19 +28,37 @@ email_subject <- glue("System Huddle Report - Week ")
 sinai_logo <- add_image(file = "www/Mount_Sinai_Logo_H.png",
                         width = 200)
 
+sending_date <-
+  paste0(
+    format(Sys.Date() %m+% days(1), "%B "),
+    format(Sys.Date() %m+% days(1), "%d") %>% as.numeric(),
+    ", ",
+    format(Sys.Date() %m+% days(1), "%Y")
+  )
+
+
+# Generate the footer text
+footer_text <- glue("System Huddle Report for the Week of {sending_date}.")
+
+
+
 ##Use blastula to construct email to send
 compose_email(header = sinai_logo,
               body = render_email("Scripts/email_body.Rmd")$html_html,
-              footer = "This is an auto generated email") %>%
+              footer = footer_text) %>%
   # add_attachment(
   #   file = save_compressed_file_path,
-  #   filename = paste0("Oncology Arrived Data ", month_year, ".zip")
-  # ) %>%
+  #   filename = paste0("Oncology Arrived Data ", month_year, ".zip")) %>%
+  purrr::list_modify(html_str =
+                       .$html_str %>%
+                       stringr::str_replace_all(pattern = "(?i)#f6f6f6",
+                                                replacement = "#FFFFFF")) %>%
   smtp_send(
-    from = `c("So Youn Kweon", "soyoun.kweon@mssm.edu")`,
+    from = "soyoun.kweon@mssm.edu",
     to = send_list,
     cc = cc_list,
     credentials = creds_file(file = email_credential_location),
     subject = email_subject
-  )
+  ) 
+
 ```
