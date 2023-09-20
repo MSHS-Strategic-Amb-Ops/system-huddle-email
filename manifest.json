@@ -4,7 +4,7 @@
   "platform": "4.2.3",
   "metadata": {
     "appmode": "rmd-static",
-    "primary_rmd": "Scripts/email_body.Rmd",
+    "primary_rmd": "system-huddle-email.Rmd",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -1577,9 +1577,6 @@
     }
   },
   "files": {
-    "README.md": {
-      "checksum": "4776cd862f60b98f4aa6fe0ae681cd3a"
-    },
     "Scripts/email_body.Rmd": {
       "checksum": "ef0f727dc39fe8c3e8c40d5c40e3348c"
     },
