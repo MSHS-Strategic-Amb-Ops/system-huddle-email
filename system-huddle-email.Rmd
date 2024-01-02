@@ -33,7 +33,8 @@ sending_date <-
 email_credential_location <- "/SharedDrive/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Administrative/Workgroups/R Workbench/Working Area/Data Connections/email_creds"
 cc_list <- c("soyoun.kweon@mssm.edu",
              "leonarda.parente@mountsinai.org",
-             "riya.navlani@mountsinai.org")
+             "riya.navlani@mountsinai.org"
+             )
 send_list <- c("Raul.Aguilar@mountsinai.org",
                "Christina.Bogie-claxton@mountsinai.org",
                "Kelly.Cassano@mountsinai.org",
@@ -48,7 +49,6 @@ send_list <- c("Raul.Aguilar@mountsinai.org",
                "Amanda.Diresta@mountsinai.org",
                "Oladapo.Durojaiye@mountsinai.org",
                "Berthe.Erisnor@mountsinai.org",
-               "Sivan.Ertel@mountsinai.org",
                "Steve.Garcia@mountsinai.org",
                "alicia.gresham@mssm.edu",
                "Jeffrey.Gurkin-young@mountsinai.org",
@@ -77,6 +77,7 @@ send_list <- c("Raul.Aguilar@mountsinai.org",
             	 "ricardo.yanes@mountsinai.org",
             	 "Jessica.Zimmerman@mountsinai.org",
             	 "Paul.Zucker@mountsinai.org")
+
 email_subject <- glue("System Huddle Report - Week of {sending_date}")
 
 sinai_logo <- add_image(file = "www/Mount_Sinai_Logo_H.png",
