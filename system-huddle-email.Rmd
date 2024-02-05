@@ -92,10 +92,10 @@ compose_email(header = sinai_logo,
               body = render_email("Scripts/email_body.Rmd")$html_html,
               footer = footer_text) %>%
   add_attachment(
-    file = "/nfs/data/Applications/Ambulatory/system_huddle_2022_2023.html",
-    filename = paste0("System Huddle Report_2022_2023",".html")) %>%    
-    # file = "/nfs/data/Applications/Ambulatory/system_huddle_test.html",
-    # filename = paste0("System Huddle Report_",format(Sys.Date()+1, "%m%d%y"),".html")) %>%                
+    # file = "/nfs/data/Applications/Ambulatory/system_huddle_report.html",
+    # filename = paste0("System Huddle Report_2022_2023",".html")) %>%    
+    file = "/nfs/data/Applications/Ambulatory/system_huddle_report.html",
+    filename = paste0("System Huddle Report_",format(Sys.Date()+1, "%m%d%y"),".html")) %>%
   purrr::list_modify(html_str =
                        .$html_str %>%
                        stringr::str_replace_all(pattern = "(?i)#f6f6f6",
