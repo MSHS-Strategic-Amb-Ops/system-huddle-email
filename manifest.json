@@ -4,7 +4,7 @@
   "platform": "4.2.3",
   "metadata": {
     "appmode": "rmd-static",
-    "primary_rmd": "Scripts/email_body.Rmd",
+    "primary_rmd": "system-huddle-email.Rmd",
     "primary_html": null,
     "content_category": null,
     "has_parameters": false
@@ -1571,14 +1571,11 @@
     }
   },
   "files": {
-    "README.md": {
-      "checksum": "4776cd862f60b98f4aa6fe0ae681cd3a"
-    },
     "Scripts/email_body.Rmd": {
       "checksum": "ed8fcaf14149fe49df41a5a488aa8295"
     },
     "system-huddle-email.Rmd": {
-      "checksum": "e5a140bbfe939c632a49c560c21e3d7f"
+      "checksum": "e9789275de59788f59d9079dbf338c10"
     },
     "www/Mount_Sinai_Logo_H.png": {
       "checksum": "2947092f1b4ba7d991e336025e6b44d7"
