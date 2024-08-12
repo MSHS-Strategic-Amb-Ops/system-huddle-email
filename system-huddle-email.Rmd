@@ -31,9 +31,9 @@ sending_date <-
 
 
 email_credential_location <- "/SharedDrive/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Administrative/Workgroups/R Workbench/Working Area/Data Connections/email_creds"
-cc_list <- c("soyoun.kweon@mssm.edu"
+cc_list <- c("soyoun.kweon@mssm.edu",
              # "leonarda.parente@mountsinai.org",
-             # "riya.navlani@mountsinai.org"
+             "riya.navlani@mountsinai.org"
              )
 send_list <- c("soyoun.kweon@mssm.edu"
   # "Raul.Aguilar@mountsinai.org",
