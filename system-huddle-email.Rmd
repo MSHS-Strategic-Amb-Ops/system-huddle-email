@@ -43,7 +43,6 @@ cc_list <- c("soyoun.kweon@mssm.edu",
              )
 send_list <- c(
   "Raul.Aguilar@mountsinai.org",
-     "Christina.Bogie-claxton@mountsinai.org",
      "Kelly.Cassano@mountsinai.org",
      "Abigail.Chen@mountsinai.org",
      "Lucy.Chen@mountsinai.org",
