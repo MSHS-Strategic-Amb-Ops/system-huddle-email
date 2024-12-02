@@ -19,6 +19,7 @@ library(lubridate)
 # source("Scripts/pull_and_process_monthly.R", local = knitr::knit_global())
 ```
 
+
 ```{r set up, echo=FALSE}
 
 sending_date <-
@@ -31,6 +32,12 @@ sending_date <-
 
 
 email_credential_location <- "/SharedDrive/deans/Presidents/HSPI-PM/Operations Analytics and Optimization/Administrative/Workgroups/R Workbench/Working Area/Data Connections/email_creds"
+
+```
+
+
+```{r email sending list, echo=FALSE}
+
 cc_list <- c("soyoun.kweon@mssm.edu"
              # "leonarda.parente@mountsinai.org"
              )
