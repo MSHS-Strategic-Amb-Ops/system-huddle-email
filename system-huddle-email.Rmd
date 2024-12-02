@@ -19,7 +19,7 @@ library(lubridate)
 # source("Scripts/pull_and_process_monthly.R", local = knitr::knit_global())
 ```
 
-```{r pressure, echo=FALSE}
+```{r set up, echo=FALSE}
 
 sending_date <-
   paste0(
@@ -89,6 +89,10 @@ sinai_logo <- add_image(file = "www/Mount_Sinai_Logo_H.png",
 # Generate the footer text
 footer_text <- glue("System Huddle Report for the Week of {sending_date}.")
 
+```
+
+
+```{r email details, echo=FALSE}
 
 ##Use blastula to construct email to send
 compose_email(header = sinai_logo,
@@ -110,5 +114,5 @@ compose_email(header = sinai_logo,
     credentials = creds_file(file = email_credential_location),
     subject = email_subject
   ) 
-
 ```
+
