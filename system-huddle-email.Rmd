@@ -72,7 +72,6 @@ send_list <- c(
   	 "darlene.sanchez@mountsinai.org",
   	 "Sangyoon.Shin@mountsinai.org",
   	 "Jemilat.Siju@mountsinai.org",
-  	 "cardinale.smith@mssm.edu",
   	 "Tonya.Tolliver@mountsinai.org",
   	 "ania.wajnberg@mountsinai.org",
   	 "ricardo.yanes@mountsinai.org",
