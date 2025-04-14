@@ -81,7 +81,8 @@ send_list <- c("soyoun.kweon@mssm.edu",
     "leela.prasannapanchakarla@mountsinai.org",
     "isabella.delplato@mountsinai.org",
   "gail.jackson@mountsinai.org",
-  "cordell.downes@mountsinai.org"
+  "cordell.downes@mountsinai.org",
+  "Maureen.Larkin-phelon@mountsinai.org"
   )
 
 email_subject <- glue("System Huddle Report - Week of {sending_date}")
